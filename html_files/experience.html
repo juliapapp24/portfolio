@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="/css_styles/styles_experience.css">
+  <script src=" ./js_scripts/script.js">
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="scroll-link" data-target="main">home</a></li>
+        <li><a href="about.html" class="scroll-link" data-target="about">about</a></li>
+        <li><a href="experience.html" class="scroll-link active" data-target="experience">experience</a></li>
+        <li><a href="projects.html" class="scroll-link" data-target="projects">projects</a></li>
+        <li><a href="./pictures//papp_resume.pdf" target="_blank">resume</a></li>
+        <li><a href="mailto:jgp88@cornell.edu">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h1>hi, i'm jules!</h1>
+  </main>
+
+  <script>
+    import { setActiveLink } from './header.js';
+    setActiveLink();
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      includeHTML();
+    });
+  </script>
+
+</body>
+
+</html>
